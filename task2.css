@@ -1,0 +1,234 @@
+
+.main {
+    background-image: url('img/image.jpg');
+    width: 100%;
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background: linear-gradient;
+    font-family: "Roboto", sans-serif;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: grey;
+}
+
+.srch {
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    padding: 40px;
+    text-align: left;
+}
+
+h2 {
+    margin-top: 40px;
+    color: white;
+}
+
+ul, ol {
+    text-align: left;
+    color: white;
+}
+
+strong {
+    color: white;
+}
+
+button.cn {
+    margin-top: 20px;
+    display: block;
+    padding: 10px 30px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+button.cn:hover {
+    background-color: #0056b3;
+}
+
+button.cn a {
+    color: white;
+    text-decoration: none;
+}
+
+.login_form {
+
+    margin-top: 60px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    width: 350px;
+    text-align: left;
+}
+
+.form_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.form_input, .captcha {
+    margin-top: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.captcha_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview {
+    width: 100px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button.captcha_refresh {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.captcha_refresh i {
+    font-size: 20px;
+    color: white;
+}
+
+button#login_btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#login_btn:hover {
+    background-color: #0056b3;
+}
+
+.login_form .captcha .preview {
+    color: #555;
+    width: 90%;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+    line-height: 40px;
+    letter-spacing: 4px;
+    border: 1px dashed #888;
+    font-family: "monospace";
+}
+
+.login_form .captcha .preview span {
+    display: inline-block;
+    user-select: none;
+    color: #ff7200;
+    font-size: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+section { /* CAPTCHA information */
+    flex: 2; /* This will give the CAPTCHA section twice the space of the login form */
+}
+
+.login_form {
+    flex: 1;  /* This will ensure the login form takes up the remaining space */
+    max-width: 400px; /* or any other maximum width you prefer */
+}
+.login_form {
+    height: 80vh; /* 80% of the viewport height, adjust as needed */
+    overflow-y: auto; /* adds a scrollbar if content overflows */
+    /* ... other styles ... */
+}
+@media only screen and (max-width: 400px) {
+    .content {
+        flex-direction: column;
+    }
+
+    section, .login_form {
+        width: 150%;
+    }
+}

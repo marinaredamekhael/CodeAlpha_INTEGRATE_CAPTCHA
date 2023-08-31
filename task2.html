@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="task2.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body style="background: url('img/image.jpg') no-repeat center center fixed;">
+
+    <!-- Main Container -->
+    <div class="main">
+        
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">CAPTCHA</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SEARCH</a></li>
+                    <li><a href="#">IMAGES</a></li>
+                    <li><a href="#">QUESTION</a></li>
+                </ul>
+            </div>
+         
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            
+            <!-- CAPTCHA Information -->
+            <section>
+               
+                <h2>Traditional Text CAPTCHA</h2>
+                <strong>Pros:</strong>
+                <ul>
+                    <li>Widely recognized by users.</li>
+                    <li>Often available for free.</li>
+                </ul>
+                <strong>Cons:</strong>
+                <ul>
+                    <li>Bots are becoming increasingly skilled at deciphering distorted text.</li>
+                    <li>Difficult for some users, potentially causing frustration.</li>
+                </ul>
+                
+                <h2>Image Recognition CAPTCHA (like Google’s reCAPTCHA)</h2>
+                <strong>Pros:</strong>
+                <ul>
+                    <li>Difficult for bots to bypass.</li>
+                    <li>Offers an interactive and intuitive experience for users.</li>
+                </ul>
+                <strong>Cons:</strong>
+                <ul>
+                    <li>Some images can be ambiguous.</li>
+                    <li>Not always friendly for visually impaired users.</li>
+                </ul>
+                
+                <h2>Math CAPTCHA</h2>
+                <strong>Pros:</strong>
+                <ul>
+                    <li>Typically easy for humans to solve.</li>
+                    <li>Offers a quick challenge-response mechanism.</li>
+                </ul>
+                <strong>Cons:</strong>
+                <ul>
+                    <li>Some bots can easily solve basic math problems.</li>
+                    <li>May not be user-friendly for those who struggle with math.</li>
+                </ul>
+                
+                <h2>Invisible CAPTCHA</h2>
+                <strong>Pros:</strong>
+                <ul>
+                    <li>Doesn't interrupt the user experience.</li>
+                    <li>Relies on user behavior analysis, making it harder for bots to emulate.</li>
+                </ul>
+                <strong>Cons:</strong>
+                <ul>
+                    <li>Might raise privacy concerns.</li>
+                    <li>False positives/negatives are possible.</li>
+                </ul>
+                
+                <h2>Biometric CAPTCHA</h2>
+                <strong>Pros:</strong>
+                <ul>
+                    <li>High level of security.</li>
+                    <li>Difficult for bots to bypass.</li>
+                </ul>
+                <strong>Cons:</strong>
+                <ul>
+                    <li>Requires specific hardware and software.</li>
+                    <li>Raises significant privacy concerns.</li>
+                </ul>
+                
+                <h2>Audio CAPTCHA</h2>
+                <strong>Pros:</strong>
+                <ul>
+                    <li>Provides an option for visually impaired users.</li>
+                    <li>Bots typically struggle with complex audio challenges.</li>
+                </ul>
+                <strong>Cons:</strong>
+                <ul>
+                    <li>The audio might be unclear or misinterpreted by users.</li>
+                    <li>Not ideal in noisy environments.</li>
+                </ul>
+                
+                <h2>3D CAPTCHA</h2>
+                <strong>Pros:</strong>
+                <ul>
+                    <li>Engaging for users.</li>
+                    <li>Complexity makes it hard for bots.</li>
+                </ul>
+                <strong>Cons:</strong>
+                <ul>
+                    <li>May require additional plugins or software.</li>
+                    <li>Can be challenging for some users to interpret.</li>
+                </ul>
+                
+                <h2>Honeypot CAPTCHA</h2>
+                <strong>Pros:</strong>
+                <ul>
+                    <li>Invisible to genuine users, maintaining user experience.</li>
+                    <li>Simple to implement.</li>
+                </ul>
+                <strong>Cons:</strong>
+                <ul>
+                    <li>Sophisticated bots can sometimes detect and avoid honeypots.</li>
+                </ul>
+                
+                <h2>Steps to Integrate CAPTCHA into an Existing Website:</h2>
+                <ol>
+                    <li>Choose a CAPTCHA Service: Based on the pros and cons listed above, decide which CAPTCHA is best suited for your website.</li>
+                    <li>Sign Up: Most CAPTCHA services require you to sign up to get API keys.</li>
+                    <li>Follow the Developer's Documentation: Each CAPTCHA service will provide documentation on how to integrate their service into your website. This will typically involve adding a script to your site and making some changes to your form submission process.</li>
+                    <li>Test: After implementing, test the CAPTCHA to ensure it works as expected and doesn't hinder the user experience.</li>
+                    <li>Monitor: Regularly monitor the effectiveness of your CAPTCHA. If bots are still getting through, or if users complain about the CAPTCHA experience, consider switching to a different type or adjusting settings if possible.</li>
+                </ol>
+            <button class="cn"><a href="#">I AM UNDERSTAND</a></button>
+
+            </section>
+            
+            <!-- Login Form -->
+            <form class="login_form" action="https://formspree.io/f/xzblgplg" method="POST">
+                <div class="form_title">Login Here</div>
+                <div class="form_input">
+                    <label for="username">UserName</label>
+                    <input type="text" name="user" id="username" required>
+                </div>
+                <div class="form_input">
+                    <label for="ID">ID</label>
+                    <input type="text" name="id" id="username" required>
+                </div>
+                <div class="form_input">
+                    <label for="password">Password</label>
+                    <input type="password"  id="password" required>
+                </div>
+                <div class="captcha">
+                    <label for="captcha_input">Enter captcha</label>
+                    <div class="preview"></div>
+                    <div class="captcha_form">
+                        <input type="text" name="text" id="captcha_form" placeholder="Enter captcha text" required>
+                        <button class="captcha_refresh">
+                            <i class="fas fa-redo"></i>
+
+                        </button>
+                    </div>
+                </div>
+                <div class="form_input">
+                    <button id="login_btn">Login</button>
+                </div>
+            </form>
+            
+        </div>
+
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="task2.js"></script>
+</body>
+
+</html>
